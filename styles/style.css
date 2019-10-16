@@ -29,3 +29,10 @@ nav {
 #logo {
   margin: 20px;
 }
+#arrow {
+  width: 10px;
+  color: white;
+}
+#header {
+  margin: 0px auto;
+}
