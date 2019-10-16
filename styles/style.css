@@ -8,10 +8,17 @@ body {
   background-color: lightgrey;
 }
 nav {
-  width: 950px;
-  height: 100px;
+  max-width: 910px;
+  max-height: 75px;
   background-color: #222931;
   margin: 0px auto;
+  padding: 20px;
+}
+.menuButton {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  margin: 20px;
 }
 #page {
   width: 1000px;
