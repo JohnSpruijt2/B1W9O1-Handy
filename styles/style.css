@@ -2,16 +2,16 @@
   margin: 0px;
   padding: 0px;
 }
-
+header {
+  grid-area: header;
+}
 body {
   font-family: 'Archivo', sans-serif;
   background-color: lightgrey;
 }
 nav {
-  max-width: 910px;
-  max-height: 75px;
+  grid-area: nav;
   background-color: #222931;
-  margin: 0px auto;
   padding: 20px;
 }
 .menuButton {
@@ -21,8 +21,13 @@ nav {
   font-size: 12px;
   margin: 20px;
 }
-#page {
-  width: 1000px;
+.page {
+  display: grid;
+width: 1000px;
+  grid-template-areas: "header header header"
+"nav nav nav"
+"bigPicture bigPicture bigPicture"
+"banner1 banner2 banner3";
   height: 100%;
   margin: 0px auto;
   background-color: white;
@@ -37,6 +42,20 @@ nav {
 #header {
   width:100%;
   position:absolute;
+}
+#bigPicture{
+  grid-area: bigPicture;
+  width: 1710.9px;
+}
+#banner1 {
+  margin-left: 25px;
+  grid-area: banner1;
+}
+#banner2 {
+  grid-area: banner2;
+}
+#banner3 {
+  grid-area: banner3;
 }
 .dropdown {
   position: relative;
