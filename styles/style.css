@@ -12,14 +12,16 @@ body {
 nav {
   grid-area: nav;
   background-color: #222931;
-  padding: 20px;
+  height: 55px;
 }
 .menuButton {
+  position: relative;
+  padding: 20px;
   background-color: #222931;
   text-decoration: none;
   color: #ffffff;
   font-size: 12px;
-  margin: 20px;
+  top: 15px;
 }
 .page {
   display: grid;
@@ -27,7 +29,8 @@ width: 1000px;
   grid-template-areas: "header header header"
 "nav nav nav"
 "bigPicture bigPicture bigPicture"
-"banner1 banner2 banner3";
+"banner1 banner2 banner3"
+"yellowbar yellowbar yellowbar";
   height: 100%;
   margin: 0px auto;
   background-color: white;
@@ -44,19 +47,103 @@ width: 1000px;
   position:absolute;
 }
 #bigPicture{
+  z-index: -1;
+  background-image: url("../img/header.jpg");
+  height: 516.5px;
+  position: relative;
+  top: -20px; /*Volgens de opdracht mag negatieve margin/ negatieve padding niet. */
   grid-area: bigPicture;
-  width: 1710.9px;
+  width: 100%;
 }
-#banner1 {
-  margin-left: 25px;
+#banner1Div {
+  margin-left: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 300px;
+  height: 220px;
+  background-image: url("../img/banner-1.jpg");
   grid-area: banner1;
 }
-#banner2 {
+#banner2Div {
+  margin-left: 20px;
+  margin-top: 50px;
+  width: 300px;
+  height: 220px;
+  background-image: url("../img/banner-2.jpg");
   grid-area: banner2;
 }
-#banner3 {
+#banner3Div {
+  margin-left: 20px;
+  margin-top: 50px;
+  width: 300px;
+  height: 220px;
+  background-image: url("../img/banner-3.jpg");
   grid-area: banner3;
 }
+#banner1hover {
+  padding-top: 30%;
+  height: 59%;
+  max-height: 100%;
+  text-align: center;
+  display: none;
+  background-color: rgba(17, 17, 17, 0.646);
+  color: white;
+  font-size: 38px;
+  font-weight: 700;
+}
+#banner1Div:hover #banner1hover {display:block;}
+
+#banner2hover {
+  padding-top: 30%;
+  height: 59%;
+  max-height: 100%;
+  text-align: center;
+  display: none;
+  background-color: rgba(17, 17, 17, 0.646);
+  color: white;
+  font-size: 38px;
+  font-weight: 700;
+}
+#banner2Div:hover #banner2hover {display:block;}
+
+#banner3hover {
+  padding-top: 30%;
+  height: 59%;
+  max-height: 100%;
+  text-align: center;
+  display: none;
+  background-color: rgba(17, 17, 17, 0.646);
+  color: white;
+  font-size: 38px;
+  font-weight: 700;
+}
+#banner3Div:hover #banner3hover {display:block;}
+
+#yellowbar {
+  background-color: #ffe718;
+  height: 100px;
+  width: 100%;
+  grid-area: yellowbar;
+}
+#ribbonTitle {
+  position: relative;
+  top: 33.8px;
+  font-size: 30px;
+  font-weight: 600;
+}
+#ribbonText {
+  margin-left: 15px;
+  position: relative;
+  top: 34px;
+}
+#ribbonContent {
+  height: 100px;
+  width: 1000px;
+  margin: 0px auto;
+}
+
+
+
 .dropdown {
   position: relative;
   display: inline-block;
@@ -64,6 +151,7 @@ width: 1000px;
 .dropdown-content {
   display: none;
   position: absolute;
+  top: 50px;
   background-color: #222931;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -72,10 +160,12 @@ width: 1000px;
 .dropdown-content a {
   font-size: 16px;
   color: rgb(205, 203, 203);
-  padding: 12px 16px;
+  padding: 10px 16px;
+  margin: 6px 0px;
   text-decoration: none;
   display: block;
 }
-.dropdown-content a:hover {background-color: rgb(255, 255, 0);}
+.dropdown-content a:hover {background-color: #ffe718; color: black;}
 .dropdown:hover .dropdown-content {display: block;}
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
+.menuButton:hover {background-color: #ffe718;}
