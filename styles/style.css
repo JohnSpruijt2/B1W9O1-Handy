@@ -1,3 +1,5 @@
+/*John Spruijt 2019 */
+
 * {
   margin: 0px;
   padding: 0px;
@@ -15,6 +17,7 @@ nav {
   height: 55px;
 }
 .menuButton {
+  font-weight: 500;
   position: relative;
   padding: 20px;
   background-color: #222931;
@@ -46,13 +49,24 @@ width: 1000px;
   width:100%;
   position:absolute;
 }
+#emptySpace {
+  height: 495px;
+}
 #bigPicture{
   z-index: -1;
-  background-image: url("../img/header.jpg");
   height: 516.5px;
-  position: relative;
-  top: -20px; /*Volgens de opdracht mag negatieve margin/ negatieve padding niet. */
+  position: absolute;
+  top: 100px;
   grid-area: bigPicture;
+  width: 100%;
+}
+#emptySpace2 {
+  height: 276px;
+}
+#bigFooter {
+  z-index: -1;
+  position: absolute;
+  z-index: -1;
   width: 100%;
 }
 #banner1Div {
@@ -89,9 +103,9 @@ width: 1000px;
   background-color: rgba(17, 17, 17, 0.646);
   color: white;
   font-size: 38px;
-  font-weight: 700;
+  font-weight: 600;
 }
-#banner1Div:hover #banner1hover {display:block;}
+#banner1Div:hover #banner1hover {display: block;}
 
 #banner2hover {
   padding-top: 30%;
@@ -102,9 +116,9 @@ width: 1000px;
   background-color: rgba(17, 17, 17, 0.646);
   color: white;
   font-size: 38px;
-  font-weight: 700;
+  font-weight: 600;
 }
-#banner2Div:hover #banner2hover {display:block;}
+#banner2Div:hover #banner2hover {display: block;}
 
 #banner3hover {
   padding-top: 30%;
@@ -115,33 +129,47 @@ width: 1000px;
   background-color: rgba(17, 17, 17, 0.646);
   color: white;
   font-size: 38px;
-  font-weight: 700;
+  font-weight: 600;
 }
-#banner3Div:hover #banner3hover {display:block;}
+#banner3Div:hover #banner3hover {display: block;}
 
 #yellowbar {
   background-color: #ffe718;
-  height: 100px;
+  height: 110px;
   width: 100%;
   grid-area: yellowbar;
+  margin-bottom: 70px;
 }
 #ribbonTitle {
   position: relative;
   top: 33.8px;
-  font-size: 30px;
-  font-weight: 600;
+  font-size: 36px;
+  font-weight: 700;
 }
 #ribbonText {
   margin-left: 15px;
   position: relative;
-  top: 34px;
+  top: 33px;
+  font-size: 16px;
+  font-weight: 700;
 }
 #ribbonContent {
   height: 100px;
   width: 1000px;
   margin: 0px auto;
 }
-
+#ribbonButton {
+  font-size: 12px;
+  font-weight: 500;
+  position: relative;
+  top: 32px;
+  float: right;
+  text-decoration-line: none;
+  color: black;
+  background-color: #ffffff;
+  padding: 10px 40px;
+}
+#ribbonButton:hover {background-color: #222931; color: white;}
 
 
 .dropdown {
@@ -159,7 +187,8 @@ width: 1000px;
 }
 .dropdown-content a {
   font-size: 16px;
-  color: rgb(205, 203, 203);
+  font-weight: 500;
+  color: #ffffff;
   padding: 10px 16px;
   margin: 6px 0px;
   text-decoration: none;
@@ -167,5 +196,6 @@ width: 1000px;
 }
 .dropdown-content a:hover {background-color: #ffe718; color: black;}
 .dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .menuButton {background-color: #ffe718; color: black;}
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
-.menuButton:hover {background-color: #ffe718;}
+.menuButton:hover {background-color: #ffe718; color: black;}
