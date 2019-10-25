@@ -37,7 +37,7 @@ width: 1000px;
 "yellowbar yellowbar yellowbar"
 "footerButton1 footerButton2 footerButton3"
 "greyLine greyLine greyLine"
-"text text text";
+"text text text2";
   height: 100%;
   margin: 0px auto;
 }
@@ -220,10 +220,48 @@ width: 1000px;
 }
 #footerButton3:hover {background-color: #222931; color: #ffffff;}
 
-#symbol {
+#symbol1 {
   margin-left: 10px;
   margin-right: 25px;
   font-size: 50px;
+  display: block;
+  float: left;
+}
+#symbol2 {
+  margin-left: 10px;
+  margin-right: 25px;
+  font-size: 50px;
+  display: block;
+  float: left;
+}
+#symbol3 {
+  margin-left: 10px;
+  margin-right: 25px;
+  font-size: 50px;
+  display: block;
+  float: left;
+}
+#marker {
+  color: rgba(128, 128, 128, 0.493);
+  margin-left: 20px;
+  margin-right: 22px;
+  font-size: 25px;
+  display: block;
+  float: left;
+}
+#mobile {
+  color: rgba(128, 128, 128, 0.493);
+  margin-left: 20px;
+  margin-right: 25px;
+  font-size: 25px;
+  display: block;
+  float: left;
+}
+#envelope {
+  color: rgba(128, 128, 128, 0.493);
+  margin-left: 20px;
+  margin-right: 17px;
+  font-size: 25px;
   display: block;
   float: left;
 }
@@ -234,7 +272,47 @@ width: 1000px;
   border-bottom: 1px solid rgba(128, 128, 128, 0.493);
 }
 #overOns {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-top: 60px;
+  width: 500px;
   grid-area: text;
+}
+#overOns h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+#contact {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-top: 60px;
+  width: 500px;
+  grid-area: text2;
+  float: right;
+}
+#contact h1 {
+  margin-left: 20px;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+#footerfooter {
+  margin-top: 40px;
+  background-color: #222931;
+  height: 60px;
+}
+#footerfootertext {
+  margin-top: 20px;
+  margin-right: 5px;
+  color: white;
+  float: right;
+}
+#footerfootertextbox {
+  width: 1000px;
+  margin: 0px auto;
 }
 
 .dropdown {
