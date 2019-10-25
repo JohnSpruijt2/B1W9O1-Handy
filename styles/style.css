@@ -342,3 +342,102 @@ width: 1000px;
 .dropdown:hover .menuButton {background-color: #ffe718; color: black;}
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
 .menuButton:hover {background-color: #ffe718; color: black;}
+
+
+
+ ul.breadcrumb {
+  width: 1000px;
+  margin: 0 auto;
+  height: 20px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  padding: 10px 16px;
+  list-style: none;
+  background-color: white;
+}
+ul.breadcrumb li {
+  display: inline;
+  font-size: 12px;
+  font-weight: 400;
+}
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: ">\00a0";
+}
+ul.breadcrumb li a {
+  color: black;
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+  text-decoration: underline;
+} 
+
+
+
+
+
+#nieuwbouw {
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #ffe718;
+}
+#regelgeving {
+  color: #ffe718;
+}
+#advies {
+  color: #ffe718;
+}
+#nieuwbouwdropdown {
+  background-color: #959595;
+  padding: 5px;
+  color: white;
+  width: 200px;
+  left: 55%;
+  top: 95%;
+  display: none;
+  position: absolute;
+  font-size: 15px;
+  font-weight: 400;
+}
+#adviesdropdown {
+  background-color: #959595;
+  padding: 5px;
+  color: white;
+  width: 200px;
+  left: 73%;
+  top: 116%;
+  display: none;
+  position: absolute;
+  font-size: 15px;
+  font-weight: 400;
+}
+#regelgevingdropdown {
+  background-color: #959595;
+  padding: 5px;
+  color: white;
+  width: 200px;
+  left: 49%;
+  top: 119%;
+  display: none;
+  position: absolute;
+  font-size: 15px;
+  font-weight: 400;
+}
+#textPageText:hover #nieuwbouwdropdown{display: inline-block;}
+#textPageText:hover #adviesdropdown{display: inline-block;}
+#textPageText:hover #regelgevingdropdown{display: inline-block;}
+
+#textPageTitle {
+  font-size: 34px;
+  font-weight: 600;
+}
+
+#textPageText {
+  margin-bottom: 120px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
