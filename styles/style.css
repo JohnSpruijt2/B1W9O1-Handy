@@ -441,3 +441,14 @@ ul.breadcrumb li a:hover {
   font-weight: 500;
   line-height: 24px;
 }
+#footerTitle {
+  color: black;
+  font-size: 24px;
+  font-weight: 600;
+}
+#footerTitle2 {
+  margin-left: 20px;
+  color: black;
+  font-size: 24px;
+  font-weight: 600;
+}
